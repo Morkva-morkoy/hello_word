@@ -1,22 +1,47 @@
 package com.example.hello_word
 
+import android.content.res.ColorStateList
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Size
+import android.util.TypedValue
+import android.view.View
+import android.widget.Button
 import android.widget.TextView
-import com.microsoft.appcenter.AppCenter
-import com.microsoft.appcenter.analytics.Analytics
-import com.microsoft.appcenter.crashes.Crashes
 
 
 class MainActivity : AppCompatActivity() {
-    private var textID: TextView? = null
+    //
+    private lateinit var textus: TextView
+    private lateinit var but: Button
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+//
+        but = findViewById(R.id.button)
+        textus = findViewById(R.id.textView)
+        textus.setTextColor(Color.parseColor("#673AB7"))
+//  }
 
-        textID = findViewById(R.id.textview)
 
-        textID?.text = "Hello Word!"
+        but.setOnClickListener {
+            if(textus.currentTextColor == -10011977){
+                textus.setTextColor(Color.parseColor("#000000"))
+            }
+            else{
+                textus.setTextColor(Color.parseColor("#673AB7"))
+            }
+
+
+
+
+//            else
+//            {
+//                textus.text = "Hello World!"
+//            }
+        }
     }
 }
