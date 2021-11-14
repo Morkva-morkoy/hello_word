@@ -14,26 +14,44 @@ import android.widget.TextView
 class MainActivity : AppCompatActivity() {
     //
     private lateinit var textus: TextView
-    private lateinit var but: Button
+    private lateinit var but_red: Button
+    private lateinit var but_blue: Button
+    private lateinit var but_black: Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 //
-        but = findViewById(R.id.button)
+        but_red = findViewById(R.id.button)
+        but_blue = findViewById(R.id.button4)
+        but_black = findViewById(R.id.button3)
         textus = findViewById(R.id.textView)
-        textus.setTextColor(Color.parseColor("#673AB7"))
 //  }
 
 
-        but.setOnClickListener {
-            if(textus.currentTextColor == -10011977){
-                textus.setTextColor(Color.parseColor("#000000"))
-            }
-            else{
-                textus.setTextColor(Color.parseColor("#673AB7"))
-            }
+        but_red.setOnClickListener {
+            textus.setTextColor(Color.parseColor("#FF0000"))
+
+        }
+
+        but_blue.setOnClickListener {
+            textus.setTextColor(Color.parseColor("#3F51B5"))
+        }
+
+        but_black.setOnClickListener {
+            textus.setTextColor(Color.parseColor("#000000"))
+        }
+    }
+}
+
+
+//            if(textus.currentTextColor == -10011977){
+//                textus.setTextColor(Color.parseColor("#000000"))
+//            }
+//            else{
+//                textus.setTextColor(Color.parseColor("#673AB7"))
+//            }
 
 
 
@@ -42,6 +60,3 @@ class MainActivity : AppCompatActivity() {
 //            {
 //                textus.text = "Hello World!"
 //            }
-        }
-    }
-}
