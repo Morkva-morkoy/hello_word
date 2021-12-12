@@ -10,62 +10,42 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="132dp"
-        android:layout_marginEnd="19dp"
-        android:layout_marginBottom="7dp"
+        android:layout_marginBottom="349dp"
         android:fontFamily="@font/montserrat_bold"
         android:text="Hello World!"
-        android:textColor="#000000"
+        android:textColor="#673AB7"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/button4"
-        app:layout_constraintEnd_toStartOf="@+id/button4"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="320dp"
-        app:backgroundTint="#FF0000"
-        app:layout_constraintBottom_toTopOf="@+id/button4"
-        app:layout_constraintEnd_toEndOf="@+id/button4"
-        app:layout_constraintStart_toStartOf="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="210dp"
+        android:layout_marginBottom="74dp"
+        android:text="Change color"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="257dp"
-        app:backgroundTint="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/button4"
-        app:layout_constraintStart_toStartOf="@+id/button4"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="85dp"
-        app:backgroundTint="#3F51B5"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
-
-    <!--    <TextView-->
-    <!--        android:id="@+id/textView1"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:fontFamily="@font/montserrat_bold"-->
-    <!--        android:text="Hello World!"-->
-    <!--        android:textColor="#673AB7"-->
-    <!--        android:textSize="20sp"-->
-    <!--        android:textStyle="bold"-->
-    <!--        app:layout_constraintBaseline_toBaselineOf="@+id/textView"-->
-    <!--        app:layout_constraintEnd_toEndOf="@+id/button"-->
-    <!--        app:layout_constraintStart_toStartOf="@+id/button" />-->
+<!--    <TextView-->
+<!--        android:id="@+id/textView1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fontFamily="@font/montserrat_bold"-->
+<!--        android:text="Hello World!"-->
+<!--        android:textColor="#673AB7"-->
+<!--        android:textSize="20sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintBaseline_toBaselineOf="@+id/textView"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/button"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/button" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

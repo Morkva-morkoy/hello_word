@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
@@ -8,3 +9,15 @@ dependencyResolutionManagement {
 }
 rootProject.name = "hello_word"
 include ":app"
+=======
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // Warning: this repository is going to shut down soon
+    }
+}
+rootProject.name = "hello_word"
+include ':app'
+>>>>>>> 1db12f2d67b5689846ceeedc821a441a1c0f9d81
