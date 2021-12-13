@@ -8,4 +8,3 @@ dependencyResolutionManagement {
 }
 rootProject.name = "hello_word"
 include ':app'
->>>>>>> 1db12f2d67b5689846ceeedc821a441a1c0f9d81
